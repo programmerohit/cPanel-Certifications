@@ -1,0 +1,237 @@
+Safeadmin certification 
+
+Section 1. Fundamental
+=========
+What does the following command do?
+
+ln /home/cpuser/file1 /home/cpuser/file2
+
+
+Creates a hard link named "file1", pointing to file2.
+Creates a symbolic link named "file1", pointing to file2.
+Creates a hard link named "file2", pointing to file1. (Answer)
+Creates a copy of file1, named "file2". 
+Creates a symbolic link named "file2", pointing to file1.
+
+
+Of the partitions shown below, which is used to store inactive pages in memory, when the system's physical RAM has been fully utilized?
+
+swap (Answer)
+/vm
+/boot
+tmpfs
+
+From the following options, which one accurately represents the frequency of this task's execution?
+
+30 */2 * * * /usr/local/cpanel/bin/mysqluserstore >/dev/null 2>&1
+
+
+None of these. (Answer)
+30 seconds after the 2nd minute of each hour.
+Once every other hour, on the 30 minute mark.
+At 2:30AM server-time, daily.
+On the 30th of February.
+
+Which of the following values represents the version of the kernel currently running on this system, based on the output below? 
+
+# uname -a
+Linux srv.webhost.tld 4.9.48-29.el7.x86_64 #1 SMP Fri Sep 8 17:11:38 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+
+GNU/Linux
+el7
+srv.webhost.tld
+SMP
+x86_64
+4.9.48 (Answer)
+None of these.
+
+Which of the following HTTP error codes indicates a server-side error?
+
+401
+302
+404
+502 (Answer)
+
+
+Your client has a block of IP addresses routed to their server, with the subnet 192.168.0.48/29. How many usable IP addresses are provided within this block?
+
+6 (Answer)
+None of these.
+14
+2
+30
+
+
+Regarding security, which of the following mount options are recommended to use when mounting a separate /tmp partition?
+
+nodevel
+norelatime
+remount
+nosuid (Answer)
+
+On a server running PowerDNS, which of the following commands would output a list of domains that use DNSSEC on this server?
+
+pdnsutil list-secure-zones (Answer)
+powerdns list-secure-zones
+pdns list-zones
+pdnsutil list-zones
+
+Which of the following mount options indicate that quotas are in use on a mounted file system?
+
+usrquota (Answer)
+journal_qt
+quota
+journal
+None of these.
+
+Which of the following exim commands would output the number of messages that currently exist in the Exim mail queue?
+
+exim -bp
+exim -bt
+exim -bpc (Answer)
+exim -qcp
+
+Which of the following commands does not reboot the system?
+
+telinit 0 (Answer)
+init 6
+shutdown -r now
+reboot
+
+What is the difference between the /etc/fstab file and the /etc/mtab file?
+
+The fstab file and the mtab file are symbolic links of each other, and are both present only to allow for improved compatibility with older devices.
+The fstab file contains filesystems to be mounted at boot time, and the mtab file contains filesystems that are currently mounted. (Answer)
+The fstab file is hard linked to the /proc/mounts file, and the mtab file contains the output of the most recent execution of fdisk -l.
+The mtab file contains filesystems to be mounted at boot time, and the fstab file contains filesystems that are currently mounted.
+
+Which of the following is a working command that would result in disabling a yum repository (represented here by repositoryname)?
+
+yum-config-repos disable "repositoryname"
+yum-config-manager --disable repositoryname (Answer)
+yum repo-manage --disable=repositoryname
+yum disable --reponame=repositoryname
+
+Which of the following methods can you use to verify the status of group and user quotas on a system?
+
+Run the /scripts/initquotas script (Answer)
+None of these.
+Run the "quotaon -pa" command
+Grep for "enabled" in the /var/cpanel/quotas file
+Run the "fdisk -qc" command
+Run the /scripts/fixquotas script
+
+Using the following IPv6 address, determine the amount of IPv6 addresses that are included with this block:
+
+2001:db8::/128
+
+
+16,384
+1,073,741,824
+16
+134,217,728
+1 (Answer)
+512
+None of these.
+
+If executed, what would the following command do?
+
+> file
+
+
+Return a value of 0 for "false".
+None of these are correct.
+Nothing; this is invalid syntax.
+Result in an empty file called "file". (Answer)
+Output the contents of "file".
+
+Of the following primary system directory trees, which would you be the least likely to backup or restore?
+
+/usr
+/proc (Answer)
+/home
+/tmp
+/var
+
+Which of the following commands would allow you to execute the "ls" command whenever you enter "list", when using the BASH shell?
+
+alias "ls"="list"
+None of these would work.
+alias list="ls" (Answer)
+alias list "ls"
+alias "list" as "ls"
+
+Which of the following options correctly describes where the target path of a symlink is stored, assuming that it exists on a standard ext3 or ext4 file system?
+
+None of these.
+In an environment variable.
+In the file descriptor.
+In an inode. (Answer)
+In memory buffer.
+
+
+Which of the following commands would list only the hidden files and folders inside a directory?
+
+ls -lad .* (Answer)
+ls -la .*
+ls -la | grep "^."
+None of the above.
+ls -la
+
+
+In the following command, what output redirection is occurring?
+
+find / \( -type f -o -type d \) -perm /o+w 2>/dev/null
+
+STDOUT is being redirected to /dev/null, for later reference. oo
+STDOUT is being redirected to /dev/null, dropping it from the resulting output.
+STDERR is being redirected to STDIN via /dev/null.
+STDERR is being redirected to /dev/null, dropping it from the resulting output.
+
+
+On a system not using KernelCare, what must take place after a kernel update is performed, in order to use the new kernel?
+
+Change to runlevel 3
+A file system check
+A rebuild of the RPM database
+A system reboot ok
+
+What is the Apache configuration directive that specifies the folder location from where a VirtualHost's static files are served from?
+
+
+
+Which of the following utilities identifies the routing path used across the network to a destination address?
+
+traceroute
+None of these can be used to do this.
+All of these can be used to do this.(Answer)
+strace
+netstat
+ping
+dig
+nslookup
+
+
+Which of the following utilities can you use to print shared library dependencies?
+
+echo $LIBDEP
+env
+export
+ldconfig
+ldd (Answer)
+
+
+What are the default ports used for HTTP and HTTPS communication? In the text box that follows, write the two port numbers in any order, separated either by a space, or the word "and" (eg. "1 and 2", or "1 2").
+
+In a default mail server setup, which of the following options indicates a port that would need to be allowed through the firewall?
+
+143 (Answer)
+120
+None of these.
+3306
+21
+
+Specify the name of the file containing a list of filesystems to be mounted at startup.
+
+/etc/fstab
